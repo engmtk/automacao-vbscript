@@ -37,8 +37,10 @@ Crie um segundo arquivo .txt copie e cole o codigo e salve como api_to_txt.vbs
 
 Com isso ele vai criar um arquivo VBScript
 
-Salve o código abaixo como api_to_txt.vbs em C:\Automacao\:
+Salve o código abaixo como api_to_txt.vbs em C:\Automacao\
 
+
+```vbs
 Dim http, json, fso, file, inicio, fim, registros, i
 Set http = CreateObject("MSXML2.XMLHTTP")
 Set fso = CreateObject("Scripting.FileSystemObject")
@@ -114,6 +116,7 @@ Function ExtrairValor(texto, chave, ByRef inicio)
         End If
     End If
 End Function
+
 
 Para que o programa rode, basta executar o .bat
 
